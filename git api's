@@ -1,7 +1,7 @@
-import retrofit2.Response
-import retrofit2.http.GET
-import retrofit2.http.Path
-
+import dd.Response
+import dd.http.GET
+import dd.http.Path
+//more imports
 interface GitHubService {
 
     @GET("/search/repositories?q=android+language:kotlin&sort=stars&order=desc&per_page=100")
@@ -17,3 +17,5 @@ interface GitHubService {
         const val BASE_URL = "https://api.github.com/"
     }
 }
+
+
